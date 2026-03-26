@@ -1,10 +1,14 @@
 # Dell Command | Configure - Intune Deployment Guide
 
-## Package Location
-The `.intunewin` package is located at:
+## Package the App
+
+Generate the `.intunewin` package using the [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool):
+
+```cmd
+IntuneWinAppUtil.exe -c "path\to\Dell-Command-Configure" -s Install.cmd -o "output\folder"
 ```
-c:\Win32\Output\Install.intunewin
-```
+
+This creates `Install.intunewin` in your output folder.
 
 ---
 
